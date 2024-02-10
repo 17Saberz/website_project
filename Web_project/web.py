@@ -1,15 +1,11 @@
-from flask import Flask, redirect, url_for, render_template
+from flask import Flask, render_template, request, redirect, url_for, flash, get_flashed_messages
+from flask_sqlalchemy import SQLAlchemy
+from werkzeug.security import generate_password_hash, check_password_hash
+from models import db, User
+from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 from flask_mail import Mail, Message
 
 app = Flask(__name__)
-
-app.config['MAIL_SERVER'] = 'sandbox.smtp.mailtrap.io'
-app.config['MAIL_PORT'] = 2525
-app.config['MAIL_USERNAME'] = '0293ff43f19034'
-app.config['MAIL_PASSWORD'] = 'f2d89bdf1413e8'
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USE_SSL'] = False
-mail = Mail(app)
 
 
 @app.route('/')
@@ -46,7 +42,7 @@ def login():
 
 @app.route('/register')
 def register():
-    return
+    return render_template("register.html")
 
 #Drop down ของ Fated_clash ทั้ง 6
 
