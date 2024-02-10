@@ -1,6 +1,16 @@
 from flask import Flask, redirect, url_for, render_template
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
+
+app.config['MAIL_SERVER'] = 'sandbox.smtp.mailtrap.io'
+app.config['MAIL_PORT'] = 2525
+app.config['MAIL_USERNAME'] = '0293ff43f19034'
+app.config['MAIL_PASSWORD'] = 'f2d89bdf1413e8'
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+mail = Mail(app)
+
 
 @app.route('/')
 def home():
