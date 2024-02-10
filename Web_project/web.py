@@ -16,7 +16,7 @@ def updates():
 
 @app.route('/six_desires')
 def desires():
-    return render_template("portfolio.html")
+    return render_template("desires.html")
 
 @app.route('/team')
 def team():
