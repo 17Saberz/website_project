@@ -99,23 +99,13 @@
     <section class="portfolio">
       <div class="container">
 
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Active</li>
-              <li data-filter=".filter-card">Lose</li>
-            </ul>
-          </div>
-        </div>
-
         <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-active">
             <div class="portfolio-item">
               <img src="{{ url_for('static', filename='img/Rezael.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h3>Active 1</h3>
+                <h3>Rezael</h3>
                 <div>
                   <a href="{{ url_for('static', filename='img/Rezael.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Active 1"><i class="bx bx-plus"></i></a>
                   <a href="https://cardfight.fandom.com/wiki/Fated_One_of_Miracles,_Rezael?wikia-footer-wiki-rec=true" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -128,7 +118,7 @@
             <div class="portfolio-item">
               <img src="{{ url_for('static', filename='img/Krysrain.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h3>Lose 1</h3>
+                <h3>Krysrain</h3>
                 <div>
                   <a href="{{ url_for('static', filename='img/Krysrain.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Lose 3"><i class="bx bx-plus"></i></a>
                   <a href="https://cardfight.fandom.com/wiki/Fated_One_of_Ever-changing,_Krysrain?wikia-footer-wiki-rec=true" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -137,14 +127,14 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-active">
             <div class="portfolio-item">
               <img src="{{ url_for('static', filename='img/Welstra.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h3>App 2</h3>
+                <h3>Welstra</h3>
                 <div>
                   <a href="{{ url_for('static', filename='img/Welstra.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="https://cardfight.fandom.com/wiki/Fated_One_of_Guiding_Star,_Welstra_"Blitz_Arms"?wikia-footer-wiki-rec=true" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href='https://cardfight.fandom.com/wiki/Fated_One_of_Guiding_Star,_Welstra_"Blitz_Arms"' title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -152,77 +142,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
             <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="{{ url_for('static', filename='img/Varga.png') }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h3>Card 2</h3>
+                <h3>Varga</h3>
                 <div>
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3>Web 2</h3>
-                <div>
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3>App 3</h3>
-                <div>
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3>Card 1</h3>
-                <div>
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3>Card 3</h3>
-                <div>
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3>Web 1</h3>
-                <div>
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="{{ url_for('static', filename='img/Varga.png') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://cardfight.fandom.com/wiki/Fated_One_of_Unparalleled,_Varga_Dragres" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
