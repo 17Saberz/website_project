@@ -12,7 +12,7 @@ def about():
 
 @app.route('/updates')
 def updates():
-    return render_template("services.html")
+    return render_template("updates.html")
 
 @app.route('/six_desires')
 def desires():
