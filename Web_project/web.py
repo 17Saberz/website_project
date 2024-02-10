@@ -11,11 +11,11 @@ def about():
     return render_template("about.html")
 
 @app.route('/updates')
-def serveices():
+def updates():
     return render_template("services.html")
 
 @app.route('/six_desires')
-def team():
+def desires():
     return render_template("portfolio.html")
 
 @app.route('/team')
@@ -23,12 +23,20 @@ def team():
     return render_template("team.html")
 
 @app.route('/blog')
-def team():
+def blog():
     return render_template("blog.html")
 
 @app.route('/contact')
-def team():
+def contact():
     return render_template("contact.html")
+
+@app.route('/login')
+def login():
+    return render_template("login.html")
+
+@app.route('/register')
+def register():
+    return
 
 #Drop down ของ Fated_clash ทั้ง 6
 
