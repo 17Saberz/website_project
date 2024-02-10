@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Team</title>
+  <title>Updates</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -35,45 +35,44 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  <body>
 
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container d-flex justify-content-between align-items-center">
-
-      <div class="logo">
-        <h1 class="text-light"><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='img/CFVDivinez-Logo.png') }}" alt="" class="img-fluid"></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><span>Cardfight!! Vanguard Divinez</span></a> -->>
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="{{ url_for('home') }}">Home</a></li>
-          <li><a href="{{ url_for('about') }}">About</a></li>
-          <li><a href="{{ url_for('updates') }}">Updates</a></li>
-          <li><a href="{{ url_for('desires') }}">Six Dessires</a></li>
-          <li><a class="active " href="{{ url_for('team') }}">Team</a></li>
-          <li><a href="{{ url_for('blog') }}">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Fated Clash</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="https://cardfight.fandom.com/wiki/Akina_Myodo">Akina Myoudou</a></li>
-              <li><a href="https://cardfight.fandom.com/wiki/Nao_Inabe">Nao Inabe</a></li>
-              <li><a href="https://cardfight.fandom.com/wiki/Masanori_Iseki?wikia-footer-wiki-rec=true">Masanori Iseki</a></li>
-              <li><a href="https://cardfight.fandom.com/wiki/Mikoto_Saito?wikia-footer-wiki-rec=true">Mikoto Saitou</a></li>
-              <li><a href="https://cardfight.fandom.com/wiki/Suo_Yobitsugi?wikia-footer-wiki-rec=true">Suou Yobitsugi</a></li>
-              <li><a href="https://cardfight.fandom.com/wiki/Taizo_Kiyokura?wikia-footer-wiki-rec=true">Taizo Kiyokura</a></li>
-            </ul>
-          </li>
-          <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
-          <li><a href="{{ url_for('login') }}">Login</a></li>
-          <li><a href="{{ url_for('register') }}">Register</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+      <div class="container d-flex justify-content-between align-items-center">
+  
+        <div class="logo">
+          <h1 class="text-light"><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='img/CFVDivinez-Logo.png') }}" alt="" class="img-fluid"></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><span>Cardfight!! Vanguard Divinez</span></a> -->>
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('updates') }}">Updates</a></li>
+            <li><a href="{{ url_for('desires') }}">Six Dessires</a></li>
+            <li><a class="active " href="{{ url_for('team') }}">Team</a></li>
+            <li><a href="{{ url_for('blog') }}">Blog</a></li>
+            <li class="dropdown"><a href="#"><span>Fated Clash</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="https://cardfight.fandom.com/wiki/Akina_Myodo">Akina Myoudou</a></li>
+                <li><a href="https://cardfight.fandom.com/wiki/Nao_Inabe">Nao Inabe</a></li>
+                <li><a href="https://cardfight.fandom.com/wiki/Masanori_Iseki?wikia-footer-wiki-rec=true">Masanori Iseki</a></li>
+                <li><a href="https://cardfight.fandom.com/wiki/Mikoto_Saito?wikia-footer-wiki-rec=true">Mikoto Saitou</a></li>
+                <li><a href="https://cardfight.fandom.com/wiki/Suo_Yobitsugi?wikia-footer-wiki-rec=true">Suou Yobitsugi</a></li>
+                <li><a href="https://cardfight.fandom.com/wiki/Taizo_Kiyokura?wikia-footer-wiki-rec=true">Taizo Kiyokura</a></li>
+              </ul>
+            </li>
+            <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
 
     </div>
   </header><!-- End Header -->
