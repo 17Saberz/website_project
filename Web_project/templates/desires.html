@@ -51,6 +51,30 @@
       </div>
 
       <nav id="navbar" class="navbar">
+        {% if current_user.is_authenticated %}
+        <ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('updates') }}">Updates</a></li>
+          <li><a class="active " href="{{ url_for('desires') }}">Six Dessires</a></li>
+          <li><a href="{{ url_for('team') }}">Team</a></li>
+          <li><a href="{{ url_for('blog') }}">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Fated Clash</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://cardfight.fandom.com/wiki/Akina_Myodo">Akina Myoudou</a></li>
+              <li><a href="https://cardfight.fandom.com/wiki/Nao_Inabe">Nao Inabe</a></li>
+              <li><a href="https://cardfight.fandom.com/wiki/Masanori_Iseki?wikia-footer-wiki-rec=true">Masanori Iseki</a></li>
+              <li><a href="https://cardfight.fandom.com/wiki/Mikoto_Saito?wikia-footer-wiki-rec=true">Mikoto Saitou</a></li>
+              <li><a href="https://cardfight.fandom.com/wiki/Suo_Yobitsugi?wikia-footer-wiki-rec=true">Suou Yobitsugi</a></li>
+              <li><a href="https://cardfight.fandom.com/wiki/Taizo_Kiyokura?wikia-footer-wiki-rec=true">Taizo Kiyokura</a></li>
+            </ul>
+          </li>
+          <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+          <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        {% else %}
         <ul>
           <li><a href="{{ url_for('home') }}">Home</a></li>
           <li><a href="{{ url_for('about') }}">About</a></li>
@@ -73,6 +97,7 @@
           <li><a href="{{ url_for('register') }}">Register</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
+        {% endif %}
       </nav><!-- .navbar -->
 
     </div>
